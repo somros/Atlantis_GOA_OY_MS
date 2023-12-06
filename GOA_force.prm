@@ -1,0 +1,269 @@
+# PC Version (created by Beth Fulton and Adam Davidson)
+#
+#-----------
+#  Update from v 6520 to 6599, Isaac Dec 20 2021
+use_pollutantfiles 0   
+
+use_move_enties 0  # use forced spatial distributions imported as NC files. See bottom of this file. 
+
+#------
+# Hydrodynamic files - this is for NEP 10 km 2017
+# input directories  
+
+ts_on_hydro_time 0
+
+nhdfiles 50
+hd0.name forcings/hydro/goa_hydro_1999.nc
+hd1.name forcings/hydro/goa_hydro_1999.nc
+hd2.name forcings/hydro/goa_hydro_1999.nc
+hd3.name forcings/hydro/goa_hydro_1999.nc
+hd4.name forcings/hydro/goa_hydro_1999.nc
+hd5.name forcings/hydro/goa_hydro_1999.nc
+hd6.name forcings/hydro/goa_hydro_1999.nc
+hd7.name forcings/hydro/goa_hydro_1999.nc
+hd8.name forcings/hydro/goa_hydro_1999.nc
+hd9.name forcings/hydro/goa_hydro_1999.nc
+hd10.name forcings/hydro/goa_hydro_1999.nc
+hd11.name forcings/hydro/goa_hydro_1999.nc
+hd12.name forcings/hydro/goa_hydro_1999.nc
+hd13.name forcings/hydro/goa_hydro_1999.nc
+hd14.name forcings/hydro/goa_hydro_1999.nc
+hd15.name forcings/hydro/goa_hydro_1999.nc
+hd16.name forcings/hydro/goa_hydro_1999.nc
+hd17.name forcings/hydro/goa_hydro_1999.nc
+hd18.name forcings/hydro/goa_hydro_1999.nc
+hd19.name forcings/hydro/goa_hydro_1999.nc
+hd20.name forcings/hydro/goa_hydro_1999.nc
+hd21.name forcings/hydro/goa_hydro_1999.nc
+hd22.name forcings/hydro/goa_hydro_1999.nc
+hd23.name forcings/hydro/goa_hydro_1999.nc
+hd24.name forcings/hydro/goa_hydro_1999.nc
+hd25.name forcings/hydro/goa_hydro_1999.nc
+hd26.name forcings/hydro/goa_hydro_1999.nc
+hd27.name forcings/hydro/goa_hydro_1999.nc
+hd28.name forcings/hydro/goa_hydro_1999.nc
+hd29.name forcings/hydro/goa_hydro_1999.nc
+hd30.name forcings/hydro/goa_hydro_1999.nc
+hd31.name forcings/hydro/goa_hydro_1999.nc
+hd32.name forcings/hydro/goa_hydro_1999.nc
+hd33.name forcings/hydro/goa_hydro_1999.nc
+hd34.name forcings/hydro/goa_hydro_1999.nc
+hd35.name forcings/hydro/goa_hydro_1999.nc
+hd36.name forcings/hydro/goa_hydro_1999.nc
+hd37.name forcings/hydro/goa_hydro_1999.nc
+hd38.name forcings/hydro/goa_hydro_1999.nc
+hd39.name forcings/hydro/goa_hydro_1999.nc
+hd40.name forcings/hydro/goa_hydro_1999.nc
+hd41.name forcings/hydro/goa_hydro_1999.nc
+hd42.name forcings/hydro/goa_hydro_1999.nc
+hd43.name forcings/hydro/goa_hydro_1999.nc
+hd44.name forcings/hydro/goa_hydro_1999.nc
+hd45.name forcings/hydro/goa_hydro_1999.nc
+hd46.name forcings/hydro/goa_hydro_1999.nc
+hd47.name forcings/hydro/goa_hydro_1999.nc
+hd48.name forcings/hydro/goa_hydro_1999.nc
+hd49.name forcings/hydro/goa_hydro_1999.nc
+
+
+
+# Bottom stress 2/18/2022 GOA not using any of this
+
+#############################################
+# Point source/sink lists
+npointss 0
+
+##########################################
+# Rain and evaporation 2/18/2022 GOA not using any of this
+
+# Solar time series data file
+Solar_radiation solar_goa_2017.ts
+Solar_radiation_rewind 1
+
+# Temperature time series data file
+use_tempfiles 1
+# The number of temperature input files 
+ntempfiles 50
+Temperature0.name forcings/temp/goa_temp_1999.nc
+Temperature1.name forcings/temp/goa_temp_1999.nc
+Temperature2.name forcings/temp/goa_temp_1999.nc
+Temperature3.name forcings/temp/goa_temp_1999.nc
+Temperature4.name forcings/temp/goa_temp_1999.nc
+Temperature5.name forcings/temp/goa_temp_1999.nc
+Temperature6.name forcings/temp/goa_temp_1999.nc
+Temperature7.name forcings/temp/goa_temp_1999.nc
+Temperature8.name forcings/temp/goa_temp_1999.nc
+Temperature9.name forcings/temp/goa_temp_1999.nc
+Temperature10.name forcings/temp/goa_temp_1999.nc
+Temperature11.name forcings/temp/goa_temp_1999.nc
+Temperature12.name forcings/temp/goa_temp_1999.nc
+Temperature13.name forcings/temp/goa_temp_1999.nc
+Temperature14.name forcings/temp/goa_temp_1999.nc
+Temperature15.name forcings/temp/goa_temp_1999.nc
+Temperature16.name forcings/temp/goa_temp_1999.nc
+Temperature17.name forcings/temp/goa_temp_1999.nc
+Temperature18.name forcings/temp/goa_temp_1999.nc
+Temperature19.name forcings/temp/goa_temp_1999.nc
+Temperature20.name forcings/temp/goa_temp_1999.nc
+Temperature21.name forcings/temp/goa_temp_1999.nc
+Temperature22.name forcings/temp/goa_temp_1999.nc
+Temperature23.name forcings/temp/goa_temp_1999.nc
+Temperature24.name forcings/temp/goa_temp_1999.nc
+Temperature25.name forcings/temp/goa_temp_1999.nc
+Temperature26.name forcings/temp/goa_temp_1999.nc
+Temperature27.name forcings/temp/goa_temp_1999.nc
+Temperature28.name forcings/temp/goa_temp_1999.nc
+Temperature29.name forcings/temp/goa_temp_1999.nc
+Temperature30.name forcings/temp/goa_temp_1999.nc
+Temperature31.name forcings/temp/goa_temp_1999.nc
+Temperature32.name forcings/temp/goa_temp_1999.nc
+Temperature33.name forcings/temp/goa_temp_1999.nc
+Temperature34.name forcings/temp/goa_temp_1999.nc
+Temperature35.name forcings/temp/goa_temp_1999.nc
+Temperature36.name forcings/temp/goa_temp_1999.nc
+Temperature37.name forcings/temp/goa_temp_1999.nc
+Temperature38.name forcings/temp/goa_temp_1999.nc
+Temperature39.name forcings/temp/goa_temp_1999.nc
+Temperature40.name forcings/temp/goa_temp_1999.nc
+Temperature41.name forcings/temp/goa_temp_1999.nc
+Temperature42.name forcings/temp/goa_temp_1999.nc
+Temperature43.name forcings/temp/goa_temp_1999.nc
+Temperature44.name forcings/temp/goa_temp_1999.nc
+Temperature45.name forcings/temp/goa_temp_1999.nc
+Temperature46.name forcings/temp/goa_temp_1999.nc
+Temperature47.name forcings/temp/goa_temp_1999.nc
+Temperature48.name forcings/temp/goa_temp_1999.nc
+Temperature49.name forcings/temp/goa_temp_1999.nc
+
+
+temp_rewind 0
+
+
+
+# Salinity time series data file
+use_saltfiles 1
+# The number of salinity files 
+nsaltfiles 50 
+Salinity0.name forcings/salt/goa_salt_1999.nc
+Salinity1.name forcings/salt/goa_salt_1999.nc
+Salinity2.name forcings/salt/goa_salt_1999.nc
+Salinity3.name forcings/salt/goa_salt_1999.nc
+Salinity4.name forcings/salt/goa_salt_1999.nc
+Salinity5.name forcings/salt/goa_salt_1999.nc
+Salinity6.name forcings/salt/goa_salt_1999.nc
+Salinity7.name forcings/salt/goa_salt_1999.nc
+Salinity8.name forcings/salt/goa_salt_1999.nc
+Salinity9.name forcings/salt/goa_salt_1999.nc
+Salinity10.name forcings/salt/goa_salt_1999.nc
+Salinity11.name forcings/salt/goa_salt_1999.nc
+Salinity12.name forcings/salt/goa_salt_1999.nc
+Salinity13.name forcings/salt/goa_salt_1999.nc
+Salinity14.name forcings/salt/goa_salt_1999.nc
+Salinity15.name forcings/salt/goa_salt_1999.nc
+Salinity16.name forcings/salt/goa_salt_1999.nc
+Salinity17.name forcings/salt/goa_salt_1999.nc
+Salinity18.name forcings/salt/goa_salt_1999.nc
+Salinity19.name forcings/salt/goa_salt_1999.nc
+Salinity20.name forcings/salt/goa_salt_1999.nc
+Salinity21.name forcings/salt/goa_salt_1999.nc
+Salinity22.name forcings/salt/goa_salt_1999.nc
+Salinity23.name forcings/salt/goa_salt_1999.nc
+Salinity24.name forcings/salt/goa_salt_1999.nc
+Salinity25.name forcings/salt/goa_salt_1999.nc
+Salinity26.name forcings/salt/goa_salt_1999.nc
+Salinity27.name forcings/salt/goa_salt_1999.nc
+Salinity28.name forcings/salt/goa_salt_1999.nc
+Salinity29.name forcings/salt/goa_salt_1999.nc
+Salinity30.name forcings/salt/goa_salt_1999.nc
+Salinity31.name forcings/salt/goa_salt_1999.nc
+Salinity32.name forcings/salt/goa_salt_1999.nc
+Salinity33.name forcings/salt/goa_salt_1999.nc
+Salinity34.name forcings/salt/goa_salt_1999.nc
+Salinity35.name forcings/salt/goa_salt_1999.nc
+Salinity36.name forcings/salt/goa_salt_1999.nc
+Salinity37.name forcings/salt/goa_salt_1999.nc
+Salinity38.name forcings/salt/goa_salt_1999.nc
+Salinity39.name forcings/salt/goa_salt_1999.nc
+Salinity40.name forcings/salt/goa_salt_1999.nc
+Salinity41.name forcings/salt/goa_salt_1999.nc
+Salinity42.name forcings/salt/goa_salt_1999.nc
+Salinity43.name forcings/salt/goa_salt_1999.nc
+Salinity44.name forcings/salt/goa_salt_1999.nc
+Salinity45.name forcings/salt/goa_salt_1999.nc
+Salinity46.name forcings/salt/goa_salt_1999.nc
+Salinity47.name forcings/salt/goa_salt_1999.nc
+Salinity48.name forcings/salt/goa_salt_1999.nc
+Salinity49.name forcings/salt/goa_salt_1999.nc
+
+
+salt_rewind 0
+
+
+# Recruitment_time_series
+
+# Recruitment_enviro_forcing
+
+
+# pH files
+use_phFiles 0
+npHfiles 0
+
+
+
+#############################################
+# Historical catch lists - nCatchts is the number of time series to be loaded and
+# typeCatchts is whether or not the data is to be interpolated (0) by the model
+# or just use previous record (1)
+nCatchts 0
+typeCatchts 0
+
+#############################################
+# Historical discard lists
+nDiscardts 0
+typeDiscardts 0
+
+#############################################
+# Residual lists - on market fish prices
+nResidualsts 0
+typeResidualsts 0
+
+#############################################
+# Economic statistics - GDP and fuel costs
+nEconts 0
+typeEconts 0
+
+##############################################
+# MPA (spatial management) files for cases where change through time
+# Same format as Catchts above
+nMPAts 0
+typeMPAts 0
+
+# Frequency of inputs.ts and exports.ts output.
+inputs_tout 1 day
+
+use_VertMixFiles 0
+
+##################################################
+### Forced Species Distributions that vary over years (as .NC inputs)
+# See Atlantis User Manual page 85. "Forcing species distributions"
+
+# At top of this file, we have set "use_move_entries 1""  # use forced spatial distributions imported as NC files. See bottom of this file. 
+
+
+nforceMoveGroups 0
+MoveGroupCodes 0
+
+
+#Also list the distribution nc files - 1 file per "MoveGroupCode"
+#
+
+##########################
+# https://confluence.csiro.au/display/Atlantis/2013/07/10/Read+in+forcing+data+for+tracers
+
+# use_external_scaling 1
+
+# scale_all_mortality 0
+# mortality_addition 0
+
+# externalBiologyForcingFile scalar_heatwave_ZM_PL_025.nc
+
+# externalBiologyForcingFile_rewind 1
