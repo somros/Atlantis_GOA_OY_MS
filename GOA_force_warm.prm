@@ -353,6 +353,6 @@ use_external_scaling 1
 scale_all_mortality 0
 mortality_addition 0
 
-externalBiologyForcingFile scalar_heatwave_PL_ZM_EUP_05.nc
+externalBiologyForcingFile scalar_OY_PL_ZM_EUP_05.nc
 
 externalBiologyForcingFile_rewind 1
