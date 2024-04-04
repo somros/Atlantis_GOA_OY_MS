@@ -1,1 +1,1 @@
-atlantisMerged -i GOA_cb_summer.nc  0 -o output_59.nc -r GOA_run.prm -f GOA_force_warm_ssp245 -p GOA_physics.prm -b GOAbioparam_test_OY_SS.prm -h GOA_harvest_7.prm -m GOAMigrations.csv -s GOA_Groups.csv -q GOA_fisheries.csv -d output
+atlantisMerged -i GOA_cb_summer.nc  0 -o output_59.nc -r GOA_run.prm -f GOA_force_warm_ssp245.prm -p GOA_physics.prm -b GOAbioparam_test_OY_SS.prm -h GOA_harvest_7.prm -m GOAMigrations.csv -s GOA_Groups.csv -q GOA_fisheries.csv -d output
